@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer>
+</script>
+
+<title>Philadelphia Phillies</title>
+</head>
+  
+<style>    
+box-sizing: border-box;
+}
+           
+#canvas {
+position:absolute;
+top:0px;
+left:0px;
+z-index: 0;
+}
+
+body {
+margin: 0;
+background-color: red;
+}
+
+.carousel {
+width: 100vw;
+height: 100vh;
+position: relative;
+}
+
+.carousel > ul {
+margin: 50px;
+padding: 0;
+list-style: none;
+}
+
+.slide {
+position: absolute;
+inset: 0;
+opacity: 0;
+transition: 200ms opacity ease-in-out;
+transition-delay: 200ms;
+}
+
+.slide > img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.slide[data-active] {
+opacity: 1;
+z-index: 1;
+transition-delay: 0ms;
+}
+
+.carousel-button {
+position: absolute;
+z-index: 2;
+background: none;
+border: none;
+font-size: 4rem;
+top: 50%;
+transform: translateY(-50%);
+color: rgba(255, 255, 255, .5);
+cursor: pointer;
+border-radius: .25rem;
+padding: 0 .5rem;
+background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+color: white;
+background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+outline: 1px solid black;
+}
+
+.carousel-button.prev {
+left: 1rem;
+}
+
+.carousel-button.next {
+right: 1rem;
+}
+    
+header {
+background-color: red;
+padding: 5px;
+text-align: center;
+font-size: 35px;
+color: white;
+}
+
+h2 {
+color: white;
+text-align: center;
+align-self: auto
+}
+ 
+p {
+text-align: center;
+color: white;
+}
+
+</style>
+
+<body>    
+<header>Philadelphia Phillies</header>
+<h2>2022</h2>
+<h2>Regular Season preformance</h2>
+<p>This regular season the Phillies ended up 87-73 which granted them their first post season appearance since 2011. The first half of the season started rough until Joe Girardi was fired in June which caused Rob Thomson to become the Interim Manager. Rob ended the regular season with a record of 65-44 out of the 109 games he managed during the regular season.</p>
+
+<h2>Regular Season additions</h2>    
+<p>During the regular season the Phillies made a few great additions to their team signing Nick Castellanos to a 5 year 100 million dollar deal. Kyle Schwarber to a 4 year 79 million dollar deal, and a smaller one year deal to Brad Hand (RHP). These additions arguably gave the Phillies that extra power they needed in their lineup to make the post season and go far into it. </p>
+
+<section aria-label="Newest Photos">
+<div class="carousel" data-carousel>
+    
+<button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+<button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+    
+<ul data-slides>
+<li class="slide" data-active>
+<img src="philliesrecord.jpg" alt="Phillies Image #1">
+</li>
+    
+<li class="slide">
+<img src="philliesjoe.jpg" alt="Phillies Image #2">
+</li>
+    
+<li class="slide">
+<img src="philliesharper.jpg" alt="Phillies Image #3">
+</li>
+    
+<li class="slide">
+<img src="philliesteam.jpg" alt="Phillies Image #4">
+</li>
+    
+<li class="slide">
+<img src="philliescele.jpg" alt="Phillies Image #5">  
+</li>
+
+<li class="slide">
+<img src="philliesrob.jpg" alt="Phillies Image #6"> 
+</li>
+    
+<li class="slide">
+<img src="phillieskyle.jpg" alt="Phillies Image #7"> 
+</li>
+    
+<li class="slide">
+<img src="philliesnick.jpg" alt="Phillies Image #8"> 
+</li>
+
+</ul>
+</div>
+</section>
+  
+<h2>Post Season preformance</h2>
+<p>The Phillies entered the post season as the 6th seed in the National League Wildcard. During the wildcard series, the Phillies managed to beat the 3rd seed cardinals in 2 games 2-0. They then went on to face the 2nd seed Atlanta Braves in the National league divisional series. In 4 hard fought games the Phillies came out on top 3-1 which sent them to the National League Championship series against the San Diego Padres. The Phillies gave the Padres a 5 game series coming out on top 4-1, naming the Phillies the National League Champions! After this there was only one series left, THE WORLD SERIES! The 2022 MLB World Series was the Phillies vs the Astros. Sadly, in 6 games the Phillies came short of a world series championship falling 4-2 against the astros!</p>
+    
+<section aria-label="Newest Photos">
+<div class="carousel" data-carousel>
+    
+<button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+<button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+    
+<ul data-slides>
+<li class="slide" data-active>
+<img src="philliespost.jpg" alt="Image #9">
+</li>
+    
+<li class="slide">
+<img src="philliesoctober.jpg" alt="Phillies Image #10">
+</li>
+    
+<li class="slide">
+<img src="phillieswin1.jpg" alt="Phillies Image #11">
+</li>
+    
+<li class="slide">
+<img src="phillieswin2.jpg" alt="Phillies Image #12">
+</li>
+    
+<li class="slide">
+<img src="philliesmvp.jpg" alt="Phillies Image #13">  
+</li>
+
+<li class="slide">
+<img src="philliesnlcs.jpg" alt="Phillies Image #14"> 
+</li>
+    
+<li class="slide">
+<img src="philliesworldseries.jpg" alt="Phillies Image #15"> 
+</li>
+    
+<li class="slide">
+<img src="phillieslogo.jpg" alt="Phillies Image #16"> 
+</li>
+
+</ul>
+</div>
+</section>  
+    
+<h2>Off season Additions</h2>
+<p>On Tuesday December 6th, 2022 shortstop/second basemen Trea Turner signed an 11 year 300 million dollar contract. This is a HUGE addition to the Phillies starting 9 and im excited to see what Trea has in store for Philadelphia. Also Trea and Bryce Harper were both members of the Washington Nationals at one point so theres already good chemistry. </p>
+    
+<section aria-label="Newest Photos">
+<div class="carousel" data-carousel>
+    
+<button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+<button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+    
+<ul data-slides>
+<li class="slide" data-active>
+<img src="philliestrae.jpg" alt="Phillies Image #17">
+</li>
+    
+<li class="slide">
+<img src="philliestraeharper.jpg" alt="Phillies Image #18">
+
+</li>   
+</ul>
+</div>
+</section>
+
+</body>
+</html>
